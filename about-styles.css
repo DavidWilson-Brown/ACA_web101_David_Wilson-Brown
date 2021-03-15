@@ -1,0 +1,108 @@
+div {
+  box-sizing: border-box;
+}
+
+.container-main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  perspective: 1.5px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#group1 {
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.background {
+  transform: translateZ(-1px) scale(1.70);
+  height: 500px;
+  width: 100%;
+  position: absolute;
+  top: calc(250px - 50vh);
+  background-image: url("https://i.ibb.co/kDyHnzv/myprofilepic.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 100px; 
+}
+
+.foreground {
+  position: absolute;
+  top: 500px;
+  height: 100%;
+  width: fixed; 
+  background: #fff;
+  padding-top: 0px;
+}
+.header {
+  z-index :1;
+}
+body {
+    font-family: 'Cardo', serif;
+}
+.content-head {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  position: fixed;
+  right:20px;
+  top:180px;
+}
+.main-head {
+  font-weight:800;
+  font-size :40px;
+}
+.sub-head {
+  font-weight:300;
+  font-size:15px;
+  letter-spacing: 12px;
+  text-transform: none;
+}
+.top-bar, .bottom-bar {
+  padding: 20px;
+}
+.vertical-container {
+  align-items:center;
+  display: flex;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow:0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.button-box {
+  margin:0 5px;
+  border:1px solid #e1e1e1;
+  background:#fff;
+  color: #000;
+  font-size:25px;
+  padding:0 20px;
+}
+.container-bottom {
+  padding: 50px 20px;
+}
+.content-title {
+  font-weight: 800;
+  font-size:50px;
+  padding-bottom:10px;
+  line-height:35px;
+}
+.content-title>span {
+  font-weight:400;
+  font-size: 20px;
+  color: #999;
+  font-style:italic;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  font-size : 25px;
+  line-height : 45px;
+}
+li>strong {
+  color: #c6463d;
+  font-size: 15px;
+}
